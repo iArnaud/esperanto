@@ -7,7 +7,7 @@ Opinionated boilerplate and best practices for building high-quality, large, mul
 Initial setup
 ===============
 
-1. Install NodeJS if not already installed.  See [http://nodejs.org/](http://nodejs.org/)
+1. Install NodeJS if not already installed.  See (http://nodejs.org/)[http://nodejs.org/]
 2. Install the Grunt command line tools:  npm install -g grunt-cli (you will have to run this as root) 
 3. cd to your project root directory and run: sudo npm install
 4. To install bower dependencies run : grunt bower:install
