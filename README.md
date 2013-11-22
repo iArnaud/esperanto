@@ -37,14 +37,10 @@ Use these grunt commands to compile Sass to CSS:
 	grunt sass
 		- compile Sass using dev mode (whitespace & comments)
 		- starts watch process to listen for changes and auto-compile
-```javascript
 
-```javascript
 	grunt sass:dev
 		- compile Sass using dev mode, but do not start a watch process   
-```javascript
-
-```javascript   
+  
 	grunt sass:prod
 		- compile Sass using production mode (optimzed, no whitespace/comments
 ```javascript
