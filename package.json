@@ -1,0 +1,28 @@
+{
+  "name": "RMn",
+  "description": "RMn UI.",
+  "version": "0.5.1",
+  "homepage": "https://github.com/ModelN",
+  "author": {
+    "name": "Nikhilesh Katakam",
+    "email": "nkatakam@modeln.com",
+    "url": "http://modeln.com"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt-mocha-test": "~0.7.0",
+    "mocha-unfunk-reporter": "~0.3.5",
+    "grunt-blanket-mocha": "~0.3.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.7.1",
+    "grunt-contrib-compass": "~0.6.0",
+    "mocha": "~1.14.0",
+    "mocha-as-promised": "~1.4.1",
+    "chai": "~1.8.1",
+    "chai-as-promised": "~4.1.0",
+    "grunt-bower-task": "~0.3.4"
+  }
+}

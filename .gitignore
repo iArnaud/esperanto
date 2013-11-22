@@ -1,0 +1,12 @@
+###########################
+# NodeJS Files
+#npm-debug.log
+node_modules/
+
+###########################
+# Compass Files
+.sass-cache
+
+###########################
+# 3rd part libs directory
+www/libs

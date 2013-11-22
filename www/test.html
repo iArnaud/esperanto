@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mocha Tests</title>
+		<link rel="stylesheet" href="libs/css/mocha/mocha.css" />
+		<style>
+			#sandbox-fixture {
+				position: absolute;
+				top: -9999;
+				left: -9999;
+			}
+		</style>
+
+		<script src="libs/js/mocha/mocha.js"></script>
+		<script src="libs/js/requirejs/require.js"></script>
+
+		<script type="text/javascript" src="libs/js/blanket/blanket.js"
+		data-cover-flags="branchTracking"
+		data-cover-only="//src/"></script>
+
+		<script type="text/javascript" src="../node_modules/grunt-blanket-mocha/support/mocha-blanket.js"></script>
+		<script type="text/javascript" src="libs/js/sinon/sinon.js"></script>
+
+		<script>
+			mocha.setup('bdd');		
+
+			if (window.PHANTOMJS) {
+				blanket.options("reporter", "../node_modules/grunt-blanket-mocha/support/grunt-reporter.js"
+                );
+                }
+
+			//load main js first, this will load all the
+			//script dependencies
+			require(["main"], function(mn) {
+				//require the main app/ router
+				//in our case its the application shell
+				require(["src/js/app/MainApplication"], function(MainApplication) {
+					//once the shell is loaded kick off the test loader
+					require(["test/TestLoader"], function(TestLoader) {
+						//start running the mocha tests
+						TestLoader.start();
+					});
+				});
+			});
+
+		</script>
+	</head>
+	<body>
+		<div id="mocha"></div>
+		<!--we use this div for testing elements that expect to be attached to the DOM
+		there are some jquery plugins that expect to find elements using the global $
+		instead of a local selector that could match an element that's in-memory but not attached to the DOM
+		qunit had this feature built in, and would automatically create a sandbox-fixture element that it would automatically empty out after each test
+		mocha does not have this, but we added the fixture manually in test.html. we empty it out in the global afterEach-->
+		<div id="sandbox-fixture"></div>
+	</body>
+</html>

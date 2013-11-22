@@ -1,0 +1,80 @@
+{
+    "name": "RMn",
+    "version": "0.0.1",
+    "dependencies": {
+        "marionette": "*",
+        "Backbone.ModelBinder": "*",
+        "backbone.geppetto" : "*",
+        "jquery": "~2.0.3",
+        "hammerjs" : "*",
+        "mockJSON" : "*",
+        "requirejs":"*",
+        "jquery-ui" : "*",
+        "mocha" : "~1.13.0",
+        "sinon-chai" : "*",
+        "chai-jquery" : "*",
+        "chai-datetime" : "*",
+        "chai" : "*",
+        "handlebars" : "http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.1.2.js",
+        "grunt-blanket-mocha" : "*",
+        "sinon" : "*",
+        "blanket" : "*",
+        "text": "*",
+        "backbone.wreqr" : "*",
+        "backbone.babysitter": "*"
+        
+    },
+    "exportsOverride": {
+        "backbone.wreqr"  : {
+            "js" : "**/lib/amd/*.js"
+        },
+        "backbone.babysitter": {
+            "js" : "**/lib/amd/*.js"
+        },
+        "sinon":{
+           "js" : "**/lib/sinon.js"
+        },
+        "blanket" : {
+            "js" : "**/dist/qunit/blanket.js"
+        },
+        "grunt-blanket-mocha" : {
+            "js" : "**/support/mocha-blanket.js"
+        },
+        "marionette": {
+            "js": "**/amd/*.js"
+        },
+        "geppetto": {
+            "js": "**/dist/*.js"
+        },
+        "backbone": {
+            "js": "**/backbone*.js"
+        },
+        "underscore": {
+            "js": "**/underscore*.js"
+        },
+        "Backbone.ModelBinder" : {
+            "js" : "**/Backbone.*.js"
+        },
+        "hammerjs" : {
+            "js" : "**/hammer*.js"
+        },
+        "mockJSON":{
+            "js" : "**/js/jquery.mockjson.js"
+        },
+        "requirejs":{
+            "js" : "**/require.js"
+        },
+        "mocha" : {
+            "js" : "**/mocha.js",
+            "css" : "**/mocha.css"
+        },
+        "sinon-chai" : {
+            "js" : "**/lib/*.js"
+        }, 
+        "*": {
+            "js": "**/**/*.js",
+            "css": "**/*.css",
+            "scss": "**/*.scss"
+        }
+    }
+}
