@@ -23,6 +23,7 @@ CSS Framework Installation
 ===============
 These instructions are for CentOS. Mac should be similar or easier. For windows see the instructions here [https://wiki.openstack.org/wiki/RubyGems#Windows](https://wiki.openstack.org/wiki/RubyGems#Windows)
 These commands use "sudo" to run as root. Please type your usual password when prompted.
+
 1. cd to your project root directory 
 2. check if you have ruby installed by running "ruby --version"
 3. if you get a response that is 1.8.7 or newer, you can skip to the next step
